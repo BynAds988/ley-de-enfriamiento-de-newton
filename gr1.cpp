@@ -1,17 +1,17 @@
 /*****************************************************************************************************************************
  * Proyecto    : Física Computacional II.
- * Version     : 17/07/2023 (running ok).
+ * Version     : 17/07/2023 (running Ok).
  * Descripcion : Ley de enfriamiento de Newton (simulación t = -ln[(T-Ta)/(To-Ta)]/k).
- * Autor       :
+ * Autor       : Aros D., Campaña B., Jurado Ordoñez Y., Palacios A., Delgado E.
  *****************************************************************************************************************************/
 
 using namespace std;
 using namespace TMath;
 
 // Parámetros globales.
-Double_t Ta = 20.;                            // Temperatura ambiente [ºC].
-Double_t To = 74.;                            // Temperatura agua [ºC].
-Double_t k  = 0.000764;                   // Constante de enfriamiento.
+Double_t Ta = 20.;                             // Temperatura ambiente [ºC].
+Double_t To = 74.;                             // Temperatura agua [ºC].
+Double_t k  = 0.000764;                        // Constante de enfriamiento.
 	
 // Constructores (sirven para inicializar un objeto y establecer sus propiedades y valores predeterminados).
 Double_t len_dif(Double_t x, Double_t y);
@@ -22,11 +22,11 @@ void CanvasPartition(TCanvas *C,const Int_t Nx,const Int_t Ny, Float_t lMargin, 
 // Función principal:
 void gr1(){
     // Información del experimento ...........................................................................................
-    const Int_t npts  = 10;                         // Número de puntos para las graficas.
-    const Int_t nerr  = 1000;                       // Número de puntos obtener los errores de la temperatura.
-    const Int_t nbins = 15;                         // Número de bins para los histogramas.
-    Double_t sigma_tiempo = 30.;              // Error en el tiempo [s] (tiempo de estabilización del multimetro).
-    Double_t sigma_temperatura = 2.;          // Error en la determinación de la temperatura [s] (error instrumento).
+    const Int_t npts  = 10;                    // Número de puntos para las graficas.
+    const Int_t nerr  = 1000;                  // Número de puntos obtener los errores de la temperatura.
+    const Int_t nbins = 15;                    // Número de bins para los histogramas.
+    Double_t sigma_tiempo = 30.;               // Error en el tiempo [s] (tiempo de estabilización del multimetro).
+    Double_t sigma_temperatura = 2.;           // Error en la determinación de la temperatura [s] (error instrumento).
     Double_t Tmin = 30.;                       // Temperatura inicial [ºC], tiempo de reacción promedio.
 
     
