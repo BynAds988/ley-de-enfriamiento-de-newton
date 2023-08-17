@@ -2,7 +2,7 @@
  * Proyecto    : Física Computacional II.
  * Version     : 17/07/2023 (running ok).
  * Descripcion : Ley de enfriamiento de Newton (simulación t = -ln[(T-Ta)/(To-Ta)]/k).
- * Autor       :
+ * Autor       : Aros D., Campaña B., Jurado Ordoñez Y., Palacios A.
  *****************************************************************************************************************************/
 
 using namespace std;
@@ -10,8 +10,8 @@ using namespace TMath;
 
 // Parámetros globales.
 Double_t Ta = 20.;                            // Temperatura ambiente [ºC].
-Double_t To = 74;                            // Temperatura agua [ºC].
-Double_t k  = 0.000764;                   // Constante de enfriamiento.
+Double_t To = 74;                             // Temperatura agua [ºC].
+Double_t k  = 0.000764;                       // Constante de enfriamiento.
 
 // Constructores (sirven para inicializar un objeto y establecer sus propiedades y valores predeterminados).
 Double_t len_dif(Double_t x, Double_t y);
