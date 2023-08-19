@@ -9,7 +9,7 @@ using namespace std;
 using namespace TMath;
 
 // Parámetros globales.
-Double_t Ta = 20.;                            // Temperatura ambiente [ºC].
+Double_t Ta = -8.;                            // Temperatura ambiente [ºC].
 Double_t To = 74;                             // Temperatura agua [ºC].
 Double_t k  = 0.000764;                       // Constante de enfriamiento.
 
